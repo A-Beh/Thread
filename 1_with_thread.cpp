@@ -1,5 +1,5 @@
 // Editted 09/2024
-// Sum of numbers Withot thread
+// Sum of numbers with thread
 // By: Ali Behfarnia
 
 #include <iostream>
