@@ -45,7 +45,7 @@ void process_data() {
     cv.wait(lock, [] ()->bool { return sensor_data_ready; });
 
     // Once data is ready, process it
-    cout << "3 - Processing sensor data: " << sensor_data << "°C" << endl;
+    cout << "3 - Processing sensor data: " << sensor_data << "°F" << endl;
 
     // Simulate further data processing (e.g., sending to another module)
     this_thread::sleep_for(chrono::seconds(1));
@@ -66,6 +66,6 @@ int main() {
 // Result:
 // 1 - Reading sensor data...
 // 2 - Sensor data ready, notifying the processing thread...
-// 3 - Processing sensor data: 75°C
+// 3 - Processing sensor data: 75°F
 // 4 - Data processed successfully!
 // Program ended with exit code: 0
