@@ -62,3 +62,10 @@ int main() {
     
     return 0;
 }
+
+// Result:
+// 1 - Reading sensor data...
+// 2 - Sensor data ready, notifying the processing thread...
+// 3 - Processing sensor data: 75°C
+// 4 - Data processed successfully!
+// Program ended with exit code: 0
