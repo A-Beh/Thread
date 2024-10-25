@@ -10,7 +10,7 @@
 // ************
 // Solution
 // A common solution to avoid livelock is to introduce some level of random delay or a more sophisticated locking
-// mechanism like lock hierarchy or back-off strategy. 
+// mechanism like lock hierarchy (Thread Priority, native_handle()) or back-off strategy. 
 
 
 // ************
@@ -77,3 +77,8 @@ int main() {
 
     return 0;
 }
+
+// (Sample) Result:
+// Transmitter 1 is sending data...
+// Transmitter 2 couldn't get both frequency bands, retrying...
+// Transmitter 2 is sending data...
