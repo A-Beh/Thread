@@ -49,3 +49,10 @@ int main() {
     cout << "All threads have completed their work." << endl;
     return 0;
 }
+
+// Results:
+// Thread 0x700004cee000 is initializing ptr
+// Doing work in thread 0x700004cee000
+// Doing work in thread 0x700004be8000
+// Doing work in thread 0x700004c6b000
+// All threads have completed their work.
